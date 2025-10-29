@@ -15988,10 +15988,11 @@ Game.Launch=function()
 			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(100);">+100 lumps</a>';
 			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(1000);">+1k lumps</a>';
 			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(10000);">+10k lumps</a>';
-			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(1000000);">+100k lumps</a>';
-			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(10000000);">+1m lumps</a>';
-			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(100000000);">+10m lumps</a>';
-			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(1000000000);">+100m lumps</a>';
+			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(100000);">+100k lumps</a>';
+			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(1000000);">+1m lumps</a>';
+			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(10000000);">+10m lumps</a>';
+			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(100000000);">+100m lumps</a>';
+			str+='<a class="option neato" '+Game.clickStr+'="Game.gainLumps(1000000000);">+1b lumps</a>';
 			str+='<a class="option neato" '+Game.clickStr+'="Game.Lumpsearned=0;Game.recalculateGains=1;">Reset Lumps earned</a><br>';
 			str+='<div class="line"></div>';
 			str+='<a class="option neato" '+Game.clickStr+'="for (var i in Game.Objects){Game.Objects[i].level=0;Game.Objects[i].onMinigame=false;Game.Objects[i].refresh();}Game.recalculateGains=1;">Reset levels</a>';
@@ -16013,7 +16014,7 @@ Game.Launch=function()
 			str+='<a class="option neato" '+Game.clickStr+'="Game.EditAscend();">'+(Game.DebuggingPrestige?'Exit Ascend Edit':'Ascend Edit')+'</a>';
 			str+='<a class="option neato" '+Game.clickStr+'="Game.DebugUpgradeCpS();">Debug upgrades CpS</a>';
 			str+='<a class="option neato" '+Game.clickStr+'="Game.seed=Game.makeSeed();">Re-seed</a>';
-			str+='<a class="option neato" '+Game.clickStr+'="Game.heralds=100;l(\'heraldsAmount\').textContent=Game.heralds;Game.externalDataLoaded=true;Game.recalculateGains=1;">Max heralds</a>';
+			str+='<a class="option neato" '+Game.clickStr+'="Game.heralds=6777776;l(\'heraldsAmount\').textContent=Game.heralds;Game.externalDataLoaded=true;Game.recalculateGains=1;">Max heralds</a>';
 			str+='<div class="line"></div>';
 			for (var i=0;i<Game.goldenCookieChoices.length/2;i++)
 			{
